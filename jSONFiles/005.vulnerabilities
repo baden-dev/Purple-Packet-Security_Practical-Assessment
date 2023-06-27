@@ -1,0 +1,31 @@
+{
+  "data": {
+    "affected_items": [
+      {
+        "published": "2022-11-09",
+        "cvss2_score": 0,
+        "cve": "CVE-2022-41113",
+        "status": "VALID",
+        "title": "CVE-2022-41113 affects Windows Server 2022",
+        "version": "10.0.20348.1726",
+        "type": "OS",
+        "condition": "KB5022303 patch is not installed",
+        "cvss3_score": 7.8,
+        "external_references": [
+          "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-41113",
+          "https://nvd.nist.gov/vuln/detail/CVE-2022-41113"
+        ],
+        "updated": "2023-03-10",
+        "name": "Windows Server 2022",
+        "detection_time": "2023-06-08T19:47:27+00:00",
+        "severity": "High",
+        "architecture": "x64"
+      }
+    ],
+    "total_affected_items": 1,
+    "total_failed_items": 0,
+    "failed_items": []
+  },
+  "message": "All selected vulnerabilities were returned",
+  "error": 0
+}
