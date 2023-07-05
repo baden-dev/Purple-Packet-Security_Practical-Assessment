@@ -41,9 +41,6 @@ const processFiles = async (connection) => {
           switch (section) {
             case 'json':
               affectedItems.forEach(async (item)  => {
-                item.greeting = 'good morning';
-                item.newKey = 'New Value';
-      
                 // Create a new agent document using the Agent model
                 const agent = new Agent(item);
       
