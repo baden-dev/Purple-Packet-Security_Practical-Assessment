@@ -5,7 +5,7 @@ const { Agent, Hardware, Package, Vulnerability } = require('../models/agent-mgm
 async function getAllAgents(req, res) {
   console.log("-- getAllAgents function exacuted")
   try {
-    const agents = await Agent.find();
+    const agents = await Agent.find({}, { __v: 0, _id: 0 });
     res.json(agents);
   } catch (error) {
     console.error('Error retrieving agents:', error);
@@ -17,7 +17,7 @@ async function getAllAgents(req, res) {
 async function getAllHardware(req, res) {
   console.log("--- getAllHardware function exacuted")
   try {
-    const hardware = await Hardware.find();
+    const hardware = await Hardware.find({}, { __v: 0, _id: 0 });
     res.json(hardware);
   } catch (error) {
     console.error('Error retrieving hardware:', error);
@@ -29,7 +29,7 @@ async function getAllHardware(req, res) {
 async function getAllPackages(req, res) {
   console.log("-- getAllPackages function exacuted")
   try {
-    const packages = await Package.find();
+    const packages = await Package.find({}, { __v: 0, _id: 0 });
     res.json(packages);
   } catch (error) {
     console.error('Error retrieving packages:', error);
@@ -41,7 +41,7 @@ async function getAllPackages(req, res) {
 async function getAllVulnerabilities(req, res) {
   console.log("-- getAllVulnerabilities function exacuted")
   try {
-    const vulnerabilities = await Vulnerability.find();
+    const vulnerabilities = await Vulnerability.find({}, { __v: 0, _id: 0 });
     res.json(vulnerabilities);
   } catch (error) {
     console.error('Error retrieving vulnerabilities:', error);
