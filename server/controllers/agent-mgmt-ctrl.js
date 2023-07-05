@@ -17,7 +17,7 @@ async function getAllAgents(req, res) {
 async function getAllHardware(req, res) {
   console.log("--- getAllHardware function exacuted")
   try {
-    const hardware = await Hardware.find({}, { __v: 0 });
+    const hardware = await Hardware.find({}, { __v: 0, _id: 0 });
     res.json(hardware);
   } catch (error) {
     console.error('Error retrieving hardware:', error);
