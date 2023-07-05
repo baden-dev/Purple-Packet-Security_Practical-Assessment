@@ -1,0 +1,10 @@
+{
+  "title": "Bad Request",
+  "detail": "Error retrieving data from Wazuh DB: There is no database for agent 004. Please check if the agent has connected to the manager",
+  "dapi_errors": {
+    "node01": {
+      "error": "Error retrieving data from Wazuh DB: There is no database for agent 004. Please check if the agent has connected to the manager"
+    }
+  },
+  "error": 2007
+}
