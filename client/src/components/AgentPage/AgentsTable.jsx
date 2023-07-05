@@ -48,7 +48,7 @@ function AgentsTable() {
       </thead>
       <tbody>
         {agents.map((agent) => (
-          <tr key={agent._id}>
+          <tr key={agent.id}>
             <td>{agent.id}</td>
             {agent.os ? (
                 <td>{`${agent.os.name} v${agent.os.major}.${agent.os.minor}`}</td>
