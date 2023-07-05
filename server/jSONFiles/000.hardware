@@ -1,0 +1,29 @@
+{
+  "data": {
+    "affected_items": [
+      {
+        "cpu": {
+          "cores": 8,
+          "mhz": 2794,
+          "name": "Intel(R) Xeon(R) CPU           X5560  @ 2.80GHz"
+        },
+        "ram": {
+          "free": 5772620,
+          "total": 16190004,
+          "usage": 65
+        },
+        "scan": {
+          "id": 0,
+          "time": "2023-06-09T05:18:37+00:00"
+        },
+        "board_serial": "None",
+        "agent_id": "000"
+      }
+    ],
+    "total_affected_items": 1,
+    "total_failed_items": 0,
+    "failed_items": []
+  },
+  "message": "All specified syscollector information was returned",
+  "error": 0
+}
