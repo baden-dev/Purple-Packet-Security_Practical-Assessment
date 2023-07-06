@@ -21,4 +21,4 @@ Follow these steps to deploy and run the App:
 Once the deployment is complete, you can access the application by opening your web browser and navigating to `http://localhost:8000`. The application should be up and running.
 
 6. Clean up:
-To stop and remove the Docker containers created by the deployment, press `Ctrl + C` in the terminal running Docker Compose. Then, run the following command: "docker-compose down"
+To stop and remove the Docker containers created by the deployment, press `Ctrl + C` in the terminal running Docker Compose. Then, run the following command: "docker compose down"
