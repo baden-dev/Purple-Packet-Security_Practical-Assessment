@@ -77,8 +77,6 @@ function VulnerabilitiesTable() {
           value={searchInput}
           onChange={handleSearchInputChange}
         />
-
-        {/* Image */}
         <img src={process.env.PUBLIC_URL + '/images/search_grey.png'} alt="Icon" className="search-icon" />
       </div>
 
@@ -112,7 +110,7 @@ function VulnerabilitiesTable() {
               {expandedItem === item._id && (
                 <tr>
                   <td colSpan="5">
-                    <pre>{JSON.stringify(item, null, 2)}</pre>
+                    <pre>{JSON.stringify({ ...item, _id: undefined }, null, 2)}</pre>
                   </td>
                 </tr>
               )}

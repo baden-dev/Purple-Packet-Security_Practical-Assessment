@@ -35,7 +35,7 @@ function SoftwareTable() {
     });
 
     setFilteredSoftware(filtered);
-    setCurrentPage(1); // Reset to first page when search input changes
+    setCurrentPage(1);
   }, [searchInput, software]);
 
   const handleExpand = (itemId) => {
@@ -72,8 +72,6 @@ function SoftwareTable() {
           value={searchInput}
           onChange={handleSearchInputChange}
         />
-
-        {/* Image */}
         <img src={process.env.PUBLIC_URL + '/images/search_grey.png'} alt="Icon" className="search-icon" />
       </div>
 
@@ -109,7 +107,7 @@ function SoftwareTable() {
               {expandedItem === item._id && (
                 <tr>
                   <td colSpan="6">
-                    <pre>{JSON.stringify(item, null, 2)}</pre>
+                    <pre>{JSON.stringify({ ...item, _id: undefined }, null, 2)}</pre>
                   </td>
                 </tr>
               )}
