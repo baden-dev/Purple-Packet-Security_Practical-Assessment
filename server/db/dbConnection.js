@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 let connection = null;
+let url = 'mongodb://mongo:27017/testDb';
+// let url = 'mongodb://localhost:27017/testDb';
 
 const connectToDatabase = async () => {
   try {
-    connection = await mongoose.connect('mongodb://mongo:27017/testDb', {
+    connection = await mongoose.connect(url, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
