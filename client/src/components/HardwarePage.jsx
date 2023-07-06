@@ -33,7 +33,7 @@ function HardwareTable() {
     });
 
     setFilteredHardware(filtered);
-    setCurrentPage(1); // Reset to first page when search input changes
+    setCurrentPage(1);
   }, [searchInput, hardware]);
 
   const handleExpand = (itemId) => {
